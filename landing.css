@@ -1,0 +1,83 @@
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+p {
+  margin-bottom: 10px;
+  color: white;
+  font-size: 24px;
+  line-height: 1.5;
+  text-shadow: 2px 2px 4px black; /* Added black text shadow for the outline effect */
+  font-family: 'Arial', sans-serif; /* Update font-family to a bubbly font of your choice */
+}
+
+h1 {
+  color: white;
+  font-size: 48px;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px black; /* Added black text shadow for the outline effect */
+  font-family: 'Arial', sans-serif; /* Update font-family to a bubbly font of your choice */
+}
+
+input[type="email"] {
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #2196f3;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.bg {
+  background-image: url('https://static.pexels.com/photos/414171/pexels-photo-414171.jpeg');
+  background-size: cover;
+  -webkit-animation: slidein 100s;
+  animation: slidein 100s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+@-webkit-keyframes slidein {
+  from {background-position: top; background-size: 3000px;}
+  to {background-position: -100px 0px; background-size: 2750px;}
+}
+
+@keyframes slidein {
+  from {background-position: top; background-size: 3000px;}
+  to {background-position: -100px 0px; background-size: 2750px;}
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 5px;
+}
+
+.center h1 {
+  text-align: center;
+  color: white;
+  font-family: 'Arial', sans-serif; /* Update font-family to a bubbly font of your choice */
+  text-transform: uppercase;
+  font-size: 48px;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px black; /* Added black text shadow for the outline effect */
+}
